@@ -1,0 +1,18 @@
+[package]
+name = "ya-relay-e2e-test"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.75"
+dotenvy = "0.15.7"
+env_logger = "0.10.0"
+lazy_static = "1.4.0"
+log = "0.4.20"
+regex = "1.9.5"
+reqwest = { version = "0.11.20", default-features = false, features = ["json"] }
+serde = { version = "1.0.188", features = ["derive"] }
+tokio = { version = "1.32.0", features = ["macros", "process", "rt", "time"] }
+url = "2.4.1"
